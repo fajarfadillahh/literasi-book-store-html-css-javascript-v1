@@ -1,0 +1,112 @@
+// ===== FONT GOOGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Serif+Pro:wght@400;600&display=swap");
+
+// ===== VARIABLE CSS =====
+:root {
+  // header height
+  --header-height: 6rem;
+
+  // color palette
+  --first-color: #212529;
+  --second-color: #6c757d;
+  --green-color: #25a244;
+  --white-color: #f8f9fa;
+  --home-color: #e9ecef;
+
+  // font global
+  --font-title: "Source Serif Pro", serif;
+  --font-text: "Poppins", sans-serif;
+
+  // font weight
+  --font-reguler: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+
+  // margin
+  --margin-0-5: 0.5rem;
+  --margin-1: 1rem;
+  --margin-1-5: 1.5rem;
+  --margin-2: 2rem;
+  --margin-2-5: 2.5rem;
+  --margin-3: 3rem;
+  --margin-3-5: 3.5rem;
+  --margin-4: 4rem;
+
+  // z-index
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  // transition
+  --transition-300: 0.3s;
+}
+
+// ===== RESET & BASE =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-text);
+  font-weight: var(--font-reguler);
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: var(--font-text);
+  font-weight: var(--font-semibold);
+  padding: 0;
+  background: transparent;
+  bottom: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLE CSS =====
+.section {
+  padding: 8rem 0 4rem;
+
+  &-title {
+    font-family: var(--font-title);
+    font-size: 28px;
+    font-weight: var(--font-semibold);
+    color: var(--first-color);
+    margin-bottom: var(--margin-2);
+  }
+
+  &-text {
+    font-size: 15px;
+    color: var(--first-color);
+  }
+
+  &-bottom {
+    margin-bottom: var(--margin-2);
+  }
+}
+
+.container {
+  max-width: 1120px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+.main {
+  overflow: hidden;
+}
