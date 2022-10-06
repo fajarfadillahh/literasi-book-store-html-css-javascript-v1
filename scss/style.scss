@@ -296,3 +296,30 @@ img {
     }
   }
 }
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__theme {
+      position: inherit;
+    }
+  }
+}
