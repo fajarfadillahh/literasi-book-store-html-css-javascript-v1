@@ -59,6 +59,17 @@ html {
 body {
   font-family: var(--font-text);
   font-weight: var(--font-reguler);
+
+  // dark mode
+  &.dark {
+    --home-color: #111827;
+    --first-color: #f8f9fa;
+
+    .home__form,
+    .header__menu {
+      background-color: #1f2937;
+    }
+  }
 }
 
 li,
@@ -295,6 +306,12 @@ img {
 
 // width 767px
 @media screen and (min-width: 767px) {
+  body.dark {
+    & .header__menu {
+      background-color: transparent;
+    }
+  }
+
   .header {
     &__menu {
       display: flex;
@@ -330,7 +347,7 @@ img {
     &__list {
       position: absolute;
       left: 50%;
-      translate: -50%;
+      transform: translateX(-50%);
       gap: 2.5rem;
     }
   }
