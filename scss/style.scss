@@ -38,9 +38,6 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  // transition
-  --transition-300: 0.3s;
-
   // line-height
   --leading-text: 185%;
 }
@@ -143,7 +140,6 @@ img {
   left: 0;
   background-color: var(--home-color);
   z-index: var(--z-fixed);
-  transition: var(--transition-300);
 
   // sticky header
   &.sticky-action {
@@ -183,7 +179,7 @@ img {
       padding: 2rem;
       background-color: var(--white-color);
       box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
-      transition: var(--transition-300);
+      transition: 0.3s;
       opacity: 0;
       transform: scaleY(0);
       transform-origin: top;
