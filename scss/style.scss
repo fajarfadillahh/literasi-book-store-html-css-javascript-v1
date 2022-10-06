@@ -66,6 +66,14 @@ body {
     .header__menu {
       background-color: #1f2937;
     }
+
+    &::-webkit-scrollbar {
+      background-color: #434b5e;
+
+      &-thumb {
+        background-color: #1f2937;
+      }
+    }
   }
 }
 
@@ -273,6 +281,21 @@ img {
 ::selection {
   background-color: var(--green-color);
   color: var(--white-color);
+}
+
+// ===== ::-WEBKIT-SCROLLBAR =====
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  &-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 
 // ===== MEDIA QUERIES =====
