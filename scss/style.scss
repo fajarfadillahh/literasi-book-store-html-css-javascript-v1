@@ -261,3 +261,23 @@ img {
     }
   }
 }
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home {
+    &__text,
+    &__form {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    &__text {
+      margin-bottom: var(--margin-2);
+    }
+
+    &__img {
+      width: 400px;
+    }
+  }
+}
