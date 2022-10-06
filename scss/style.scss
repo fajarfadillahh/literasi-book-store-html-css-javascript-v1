@@ -288,7 +288,7 @@ img {
     &__text,
     &__form,
     &__img {
-      width: 450px;
+      width: 420px;
     }
 
     &__title {
@@ -320,6 +320,43 @@ img {
 
     &__theme {
       position: inherit;
+    }
+  }
+}
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__list {
+      position: absolute;
+      left: 50%;
+      translate: -50%;
+      gap: 2.5rem;
+    }
+  }
+
+  .home {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__data {
+      text-align: left;
+      justify-self: flex-start;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__img {
+      width: auto;
+      justify-self: flex-end;
     }
   }
 }
